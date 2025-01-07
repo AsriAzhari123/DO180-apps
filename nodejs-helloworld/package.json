@@ -1,11 +1,11 @@
-{
+var express = require('express');
+app = express();
 
-  "name": "nodejs-helloworld",
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
 
-  "dependencies": {
+app.listen(8080, function () {
+  console.log('Example app listening on port 8080!');
+});
 
-    "express": "4.14.x"
-
-  }
-
-}
